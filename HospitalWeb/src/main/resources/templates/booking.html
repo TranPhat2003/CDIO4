@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Medilab Hospital</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link th:href="@{/assets/img/benhvienlogo.png}" rel="icon">
+	<link th:href="@{/assets/img/apple-touch-icon.png}" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link
+		th:href="@{https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i}"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link th:href="@{/assets/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/animate.css/animate.min.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/glightbox/css/glightbox.min.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/remixicon/remixicon.css}" rel="stylesheet">
+	<link th:href="@{/assets/vendor/swiper/swiper-bundle.min.css}" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link th:href="@{/assets/css/style.css}" rel="stylesheet">
+	<script th:src="@{/assets/js/main.js}"></script>
+
+</head>
+
+<body>
+	<th:block th:include="head"></th:block>
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="d-flex align-items-center">
+		<div class="container">
+			<h1>Welcome to Medilab</h1>
+			<h2>Chào mừng bạn đến với Bệnh viện Đại Học Duy Tân</h2>
+			<a href="#about" class="btn-get-started scrollto">Bắt Đầu</a>
+		</div>
+	</section><!-- End Hero -->
+
+	<main id="main">
+
+		<!-- ======= Why Us Section ======= -->
+		<section id="why-us" class="why-us">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="content">
+							<h3>Tại sao chọn Medilab?</h3>
+							<p>
+								Medpro, UMC – Đăng Ký Khám Bệnh Online là các ứng dụng thông minh giúp bạn quản lý sức khỏe
+								cá nhân một cách dễ dàng và hiệu quả. Với triết lý lấy người dùng làm trung tâm,
+								Bệnh viện Đại học Duy Tân cùng với Mepro đã thiết kế ứng dụng này để mang đến trải nghiệm
+								tốt nhất cho bạn thông qua sự
+								kết hợp của nhiều công nghệ số khác nhau và các quy trình quản trị tại cơ sở y tế, phù hợp
+								với môi trường chăm sóc sức khỏe mở,
+								linh hoạt và trực tuyến.
+							</p>
+							<div class="text-center">
+								<a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 d-flex align-items-stretch">
+						<div class="icon-boxes d-flex flex-column justify-content-center">
+							<div class="row">
+								<div class="col-xl-4 d-flex align-items-stretch">
+									<div class="icon-box mt-4 mt-xl-0">
+										<i class="bx bx-receipt"></i>
+										<h4>Đội Ngũ Bác Sĩ Đông Đảo, Chuyên Môn Cao</h4>
+										<p>Đội ngũ của chúng tôi gồm các Bác sĩ phương Tây về thần kinh cột sống, vật lý trị
+											liệu và các chuyên gia chăm sóc sức khỏe khác.</p>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex align-items-stretch">
+									<div class="icon-box mt-4 mt-xl-0">
+										<i class="bx bx-cube-alt"></i>
+										<h4>Hỗ Trợ 24/24, Nhiệt Tình, Thân Thiện</h4>
+										<p>Các chuyên gia tư vấn sức khỏe miễn phí 24/24 đều có trình độ chuyên môn.</p>
+									</div>
+								</div>
+								<div class="col-xl-4 d-flex align-items-stretch">
+									<div class="icon-box mt-4 mt-xl-0">
+										<i class="bx bx-images"></i>
+										<h4>Chứng Nhận Quốc Tế</h4>
+										<p>ISO 15189:2012 - Tiêu chuẩn quốc tế cho các phòng xét nghiệm y tế</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- End .content-->
+					</div>
+				</div>
+
+			</div>
+		</section><!-- End Why Us Section -->
+
+		<!-- ======= Appointment Section ======= -->
+		<section id="appointment" class="appointment section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>ĐẶT LỊCH</h2>
+					<p>Đội ngũ của chúng tôi gồm các Bác sĩ phương Tây về thần kinh cột sống, vật lý trị
+						liệu và các chuyên gia chăm sóc sức khỏe khác.</p>
+				</div>
+
+				<form th:action="@{/checkout}" method="post" id="myForm">
+					<div class="row">
+						<div class="col-md-4 form-group">
+							<input type="text" name="hotenbenhnhan" class="form-control" id="hotenbenhnhan" placeholder="Tên Bệnh Nhân"
+								data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+							<div class="validate"></div>
+						</div>
+
+						<div class="col-md-4 form-group">
+							<input type="text" name="namsinh" class="form-control" id="namSinh" placeholder="Năm sinh"
+								data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+							<div class="validate"></div>
+						</div>
+						<div class="col-md-4 form-group">
+							<select name="gioitinh" id="department" class="form-select">
+								<option value="">Giới tính</option>
+								<option value="Nam">Nam</option>
+								<option value="Nữ">Nữ</option>
+							</select>
+							<div class="validate"></div>
+						</div>
+
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input type="tel" class="form-control" name="sdt" id="phone" placeholder="Số điện thoại"
+								data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+							<div class="validate"></div>
+						</div>
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input type="text" class="form-control" name="diachi" id="diaChi" placeholder="Địa Chỉ"
+								data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+							<div class="validate"></div>
+						</div>
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Email của bạn"
+								data-rule="email" data-msg="Please enter a valid email" required>
+							<div class="validate"></div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input type="date" name="day" class="form-control datepicker" id="day" required>
+							<div class="validate"></div>
+						</div>
+						<div class="col-md-4 form-group" id="thoigianContainer" style="display: none;">
+							<select name="timeslot" id="timeslot" class="form-select">
+								<option value="">Chọn mốc thời gian</option>
+								<!-- Các option sẽ được thêm bằng JavaScript sau khi chọn ngày -->
+							</select>
+							<div class="validate"></div>
+							<div class="error" id="errorSlot"></div>
+						</div>
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input name="hotenbacsi" id="hotenbacsi" class="form-control datepicker"
+								th:value="'Bs.'+${doc.hotenbacsi}" readonly="true">
+							<div class="validate"></div>
+						</div>
+						<div class="col-md-4 form-group mt-3 mt-md-0">
+							<input name="mount" id="mount" class="form-control datepicker"
+								   th:value="${doc.mount}" readonly="true">
+							<div class="validate"></div>
+						</div>
+					</div>
+
+					<div class="form-group mt-3">
+						<textarea class="form-control" name="loinhan" rows="5"
+							placeholder="Message (Optional)" ></textarea>
+						<div class="validate"></div>
+					</div>
+					<br>
+					<div class="text-center">
+						<button type="submit">ĐẶT LỊCH</button>
+					</div>
+				</form>
+<!--				<script>-->
+<!--					document.getElementById('myForm').addEventListener('submit', function(event) {-->
+<!--						const selectElement = document.getElementById('department');-->
+<!--						const dateElement = document.getElementById('day');-->
+<!--						let valid = true;-->
+
+<!--						// Validate gender selection-->
+<!--						const genderValidateDiv = selectElement.nextElementSibling;-->
+<!--						if (selectElement.value === '') {-->
+<!--							genderValidateDiv.innerHTML = '<span class="error">Vui lòng chọn giới tính</span>';-->
+<!--							valid = false;-->
+<!--						} else {-->
+<!--							genderValidateDiv.innerHTML = '';-->
+<!--						}-->
+
+<!--						// Validate date selection-->
+<!--						const dateValidateDiv = dateElement.nextElementSibling;-->
+<!--						const selectedDate = new Date(dateElement.value);-->
+<!--						const today = new Date();-->
+<!--						today.setHours(0, 0, 0, 0);  // Set time to midnight to only compare dates-->
+
+<!--						if (dateElement.value === '') {-->
+<!--							dateValidateDiv.innerHTML = '<span class="error">Vui lòng chọn ngày</span>';-->
+<!--							valid = false;-->
+<!--						} else if (selectedDate < today) {-->
+<!--							dateValidateDiv.innerHTML = '<span class="error">Ngày được chọn đã qua, vui lòng chọn ngày khác</span>';-->
+<!--							valid = false;-->
+<!--						} else {-->
+<!--							dateValidateDiv.innerHTML = '';-->
+<!--						}-->
+
+<!--						// If any validation failed, prevent form submission-->
+<!--						if (!valid) {-->
+<!--							event.preventDefault();-->
+<!--						}-->
+<!--					});-->
+<!--				</script>-->
+<!--				<script>-->
+<!--					document.getElementById('myForm').addEventListener('submit', function(event) {-->
+<!--						event.preventDefault(); // Ngăn chặn hành động mặc định của form-->
+
+<!--						// Lấy thông tin từ form-->
+<!--						const formData = new FormData(this);-->
+
+<!--						// Gửi yêu cầu AJAX để kiểm tra mốc thời gian-->
+<!--						fetch('/check-timeslot', {-->
+<!--							method: 'POST',-->
+<!--							body: formData-->
+<!--						})-->
+<!--								.then(response => response.json())-->
+<!--								.then(data => {-->
+<!--									if (data.errorSlot) {-->
+<!--										// Hiển thị thông báo lỗi-->
+<!--										const errorSlotElement = document.getElementById('errorSlot');-->
+<!--										errorSlotElement.innerHTML = data.errorSlot;-->
+<!--									} else {-->
+<!--										// Nếu không có lỗi, submit form-->
+<!--										this.submit();-->
+<!--									}-->
+<!--								})-->
+<!--								.catch(error => {-->
+<!--									console.error('Error:', error);-->
+<!--								});-->
+<!--					});-->
+<!--				</script>-->
+				<script>
+					document.getElementById('myForm').addEventListener('submit', function(event) {
+						event.preventDefault(); // Prevent form's default submission action
+
+						const selectElement = document.getElementById('department');
+						const dateElement = document.getElementById('day');
+						const genderValidateDiv = selectElement.nextElementSibling;
+						const dateValidateDiv = dateElement.nextElementSibling;
+
+						let valid = true;
+
+						// Validate gender selection
+						if (selectElement.value === '') {
+							genderValidateDiv.innerHTML = '<span class="error">Vui lòng chọn giới tính</span>';
+							valid = false;
+						} else {
+							genderValidateDiv.innerHTML = '';
+						}
+
+						// Validate date selection
+						const selectedDate = new Date(dateElement.value);
+						const today = new Date();
+						today.setHours(0, 0, 0, 0);  // Set time to midnight to only compare dates
+
+						if (dateElement.value === '') {
+							dateValidateDiv.innerHTML = '<span class="error">Vui lòng chọn ngày</span>';
+							valid = false;
+						} else if (selectedDate < today) {
+							dateValidateDiv.innerHTML = '<span class="error">Ngày được chọn đã qua, vui lòng chọn ngày khác</span>';
+							valid = false;
+						} else {
+							dateValidateDiv.innerHTML = '';
+						}
+
+						if (valid) {
+							// Gather form data
+							const formData = new FormData(this);
+
+							// AJAX request to check time slot
+							fetch('/check-timeslot', {
+								method: 'POST',
+								body: formData
+							})
+									.then(response => response.json())
+									.then(data => {
+										if (data.errorSlot) {
+											// Display error message
+											const errorSlotElement = document.getElementById('errorSlot');
+											errorSlotElement.innerHTML = data.errorSlot;
+										} else {
+											// No errors, submit the form
+											this.submit();
+										}
+									})
+									.catch(error => {
+										console.error('Error:', error);
+									});
+						} else {
+							event.preventDefault();
+						}
+					});
+				</script>
+			</div>
+		</section>
+
+
+
+		<!-- ======= Gallery Section ======= -->
+		<section id="gallery" class="gallery">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>DỊCH VỤ</h2>
+					<p>Bệnh viện hướng tới phục vụ đông đảo khách hàng, người bệnh với giá thành hợp lý, nhiều chính sách ưu
+						đãi về chi phí, hỗ trợ trả góp không lãi suất cho nhiều dịch vụ khám chữa bệnh.</p>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row g-0">
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4">
+						<div class="gallery-item">
+							<a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+								<img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- End Gallery Section -->
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Liên hệ</h2>
+					<p>Medpro là nền tảng công nghệ kết nối người dân với Cơ sở - Dịch vụ Y tế hàng đầu tại Việt Nam,
+						mang lại giải pháp tiếp cận khách hàng tiềm năng và phù hợp nhu cầu thực tế</p>
+				</div>
+			</div>
+
+			<div>
+				<iframe style="border:0; width: 100%; height: 350px;"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+					frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="container">
+				<div class="row mt-5">
+
+					<div class="col-lg-4">
+						<div class="info">
+							<div class="address">
+								<i class="bi bi-geo-alt"></i>
+								<h4>Địa chỉ:</h4>
+								<p>123 Nguyễn Tri Phương, TP Đà Nẵng</p>
+							</div>
+
+							<div class="email">
+								<i class="bi bi-envelope"></i>
+								<h4>Email:</h4>
+								<p>info@example.com</p>
+							</div>
+
+							<div class="phone">
+								<i class="bi bi-phone"></i>
+								<h4>Call:</h4>
+								<p>+1 5589 55488 55s</p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-8 mt-5 mt-lg-0">
+
+						<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+							<div class="row">
+								<div class="col-md-6 form-group">
+									<input type="text" name="name" class="form-control" id="name"
+										placeholder="Your Name" required>
+								</div>
+								<div class="col-md-6 form-group mt-3 mt-md-0">
+									<input type="email" class="form-control" name="email" id="email"
+										placeholder="Your Email" required>
+								</div>
+							</div>
+							<div class="form-group mt-3">
+								<input type="text" class="form-control" name="subject" id="subject"
+									placeholder="Subject" required>
+							</div>
+							<div class="form-group mt-3">
+								<textarea class="form-control" name="message" rows="5" placeholder="Message"
+									required></textarea>
+							</div>
+							<div class="my-3">
+								<div class="loading">Loading</div>
+								<div class="error-message"></div>
+								<div class="sent-message">Your message has been sent. Thank you!</div>
+							</div>
+							<div class="text-center"><button type="submit">Send Message</button></div>
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- End Contact Section -->
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h3>Medilab</h3>
+						<p>
+							A108 Adam Street <br>
+							New York, NY 535022<br>
+							United States <br><br>
+							<strong>Phone:</strong> +1 5589 55488 55<br>
+							<strong>Email:</strong> info@example.com<br>
+						</p>
+					</div>
+
+					<div class="col-lg-2 col-md-6 footer-links">
+						<h4>Liên kết hữu ích</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Trang chủ</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Giới thiệu</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Dịch vụ</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Điều khoản dịch vụ</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Chính sách bảo mật</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Dịch vụ của chúng tôi</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Thiết kế Web</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Phát triển Web</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Xây dựng Web</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#">Thiết kế đồ họa</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 col-md-6 footer-newsletter">
+						<h4>Tham gia bản tin của chúng tôi</h4>
+						<p>Các chuyên gia tư vấn sức khỏe miễn phí 24/24 đều có trình độ chuyên môn.</p>
+						<form action="" method="post">
+							<input type="email" name="email"><input type="submit" value="Subscribe">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container d-md-flex py-4">
+
+			<div class="me-md-auto text-center text-md-start">
+				<div class="copyright">
+					&copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+				</div>
+				<div class="credits">
+					<!-- All the links in the footer should remain intact. -->
+					<!-- You can delete the links only if you purchased the pro version. -->
+					<!-- Licensing information: https://bootstrapmade.com/license/ -->
+					<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+					Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
+			</div>
+			<div class="social-links text-center text-md-right pt-3 pt-md-0">
+				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+				<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+				<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+				<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+
+	<div id="preloader"></div>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script th:src="@{/assets/vendor/purecounter/purecounter_vanilla.js}"></script>
+	<script th:src="@{/assets/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	<script th:src="@{/assets/vendor/glightbox/js/glightbox.min.js}"></script>
+	<script th:src="@{/assets/vendor/swiper/swiper-bundle.min.js}"></script>
+	<script th:src="@{/assets/vendor/php-email-form/validate.js}"></script>
+
+	<!-- Template Main JS File -->
+	<script th:src="@{/assets/js/main.js}"></script>
+
+</body>
+
+</html>

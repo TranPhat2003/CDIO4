@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Medical </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" th:href="@{site.webmanifest}">
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/search/img/favicon.ico}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" th:href="@{/search/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/search/css/owl.Qcarousel.min.css}">
+    <link rel="stylesheet" th:href="@{/search/css/slicknav.css}">
+    <link rel="stylesheet" th:href="@{/search/css/flaticon.css}">
+    <link rel="stylesheet" th:href="@{/search/css/gijgo.css}">
+    <link rel="stylesheet" th:href="@{/search/css/animate.min.css}">
+    <link rel="stylesheet" th:href="@{/search/css/animated-headline.css}">
+    <link rel="stylesheet" th:href="@{/search/css/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{/search/css/fontawesome-all.min.css}">
+    <link rel="stylesheet" th:href="@{/search/css/themify-icons.css}">
+    <link rel="stylesheet" th:href="@{/search/css/slick.css}">
+    <link rel="stylesheet" th:href="@{/search/css/nice-select.css}">
+    <link rel="stylesheet" th:href="@{/search/css/style.css}">
+
+    <link th:href="@{/assets/img/benhvienlogo.png}" rel="icon">
+    <link th:href="@{/assets/img/apple-touch-icon.png}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+            th:href="@{https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i}"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link th:href="@{/assets/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/animate.css/animate.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/glightbox/css/glightbox.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/remixicon/remixicon.css}" rel="stylesheet">
+    <link th:href="@{/assets/vendor/swiper/swiper-bundle.min.css}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link th:href="@{/assets/css/style.css}" rel="stylesheet">
+
+</head>
+<body>
+<th:block th:include="head"></th:block>
+
+<!-- ? Preloader Start -->
+<!--<div id="preloader-active">-->
+<!--	<div class="preloader d-flex align-items-center justify-content-center">-->
+<!--		<div class="preloader-inner position-relative">-->
+<!--			<div class="preloader-circle"></div>-->
+<!--			<div class="preloader-img pere-text">-->
+<!--				<img th:src="@{/search/img/logo/loder.png}" alt="">-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+<!-- Preloader Start -->
+<!-- ======= Header ======= -->
+<!--<header>-->
+<!--    &lt;!&ndash;? Header Start &ndash;&gt;-->
+<!--    <div class="header-area">-->
+<!--        <div class="main-header header-sticky">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row align-items-center">-->
+<!--                    &lt;!&ndash; Logo &ndash;&gt;-->
+<!--                    <div class="col-xl-2 col-lg-2 col-md-1">-->
+<!--                        <div class="logo">-->
+<!--                            <a th:ref="@{/home}"><img th:src="@{/search/img/logo/logo.png}" alt=""></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; SEARCH BAR &ndash;&gt;-->
+<!--                    <div class="col-md-5">-->
+<!--                        <div class="header-search">-->
+<!--                            <form th:action="@{/search}" method="get">-->
+<!--                                <input th:value="${name}" name="hotenbacsi" class="input"-->
+<!--                                       placeholder="Bác sĩ cần hỗ trợ ...">-->
+<!--                                <button class="search-btn">Search</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; /SEARCH BAR &ndash;&gt;-->
+<!--                    &lt;!&ndash; Mobile Menu &ndash;&gt;-->
+<!--                    <div class="col-12">-->
+<!--                        <div class="mobile_menu d-block d-lg-none"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Header End &ndash;&gt;-->
+<!--</header>-->
+<main>
+    <!--	&lt;!&ndash;? Hero Start &ndash;&gt;-->
+    <!--	<div class="slider-area2">-->
+    <!--		<div class="slider-height2 d-flex align-items-center">-->
+    <!--			<div class="container">-->
+    <!--				<div class="row">-->
+    <!--					<div class="col-xl-12">-->
+    <!--						<div class="hero-cap hero-cap2 text-center">-->
+    <!--							<h2>Doctors</h2>-->
+    <!--						</div>-->
+    <!--					</div>-->
+    <!--				</div>-->
+    <!--			</div>-->
+    <!--		</div>-->
+    <!--	</div>-->
+    <!--	&lt;!&ndash; Hero End &ndash;&gt;-->
+    <!--? Team Start -->
+    <div class="team-area section-padding30">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-tittle text-center mb-100">
+                        <span>Our Doctors</span>
+                        <h2>Our Specialist</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-" th:each="docSearch :${docSearch}">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img th:src="${docSearch.getHinhanh()}" alt="">
+                        </div>
+                        <div class="team-caption">
+                            <h3><a th:href="@{'/booking'+'/'+${docSearch.idd}}"
+                                   th:text="${docSearch.getHotenbacsi()}"></a></h3>
+                            <span th:text="'Chuyên Khoa :'+${docSearch.getTenKhoa()}"></span>
+                            <span th:text="'Giá :'+${docSearch.getMount()}"></span>
+                            <!-- Team social -->
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <ul class="pagination">
+                    <!-- Link to the previous page -->
+                    <li th:if="${offset > 1}" class="page-item">
+                        <a class="page-link" th:href="@{'?hotenbacsi=' + ${name} + '&offset=' + ${offset-1}}">Previous</a>
+                    </li>
+
+                    <!-- Page numbers -->
+                    <li th:each="i: ${#numbers.sequence(1, trang)}" th:classappend="${offset == i} ? 'active'" class="page-item">
+                        <a class="page-link" th:href="@{'?hotenbacsi=' + ${name} + '&offset=' + ${i}}" th:text="${i}"></a>
+                    </li>
+
+                    <!-- Link to the next page -->
+                    <li th:if="${offset < trang}" class="page-item">
+                        <a class="page-link" th:href="@{'?hotenbacsi=' + ${name} + '&offset=' + ${offset+1}}">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+</main>
+<footer>
+    <!--? Footer Start-->
+    <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
+        <div class="container">
+            <div class="footer-top footer-padding">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>About Us</h4>
+                                <div class="footer-pera">
+                                    <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod
+                                        tempor cergelit rgh. </p>
+                                    <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-number mb-50">
+                                <h4><span>+564 </span>7885 3222</h4>
+                                <p>youremail@gmail.com</p>
+                            </div>
+                            <!-- Form -->
+                            <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank"
+                                          action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                          method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                        <input type="email" name="EMAIL" id="newsletter-form-email"
+                                               placeholder=" Email Address " class="placeholder hide-on-focus"
+                                               onfocus="this.placeholder = ''"
+                                               onblur="this.placeholder = 'Your email address'">
+                                        <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">
+                                                Send
+                                            </button>
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="footer-copy-right">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                All rights reserved | This template is made with <i class="fa fa-heart"
+                                                                                    aria-hidden="true"></i> by <a
+                                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <!-- Footer Social -->
+                        <div class="footer-social f-right">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+<!-- Scroll Up -->
+<div id="back-top">
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<script th:src="@{/search/js/vendor/modernizr-3.5.0.min.js}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script th:src="@{/search/js/vendor/jquery-1.12.4.min.js}"></script>
+<script th:src="@{/search/js/popper.min.js}"></script>
+<script th:src="@{/search/js/bootstrap.min.js}"></script>
+<!-- Jquery Mobile Menu -->
+<script th:src="@{/search/js/jquery.slicknav.min.js}"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script th:src="@{/search/js/owl.carousel.min.js}"></script>
+<script th:src="@{/search/js/slick.min.js}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script th:src="@{/search/js/wow.min.js}"></script>
+<script th:src="@{/search/js/animated.headline.js}"></script>
+<script th:src="@{/search/js/jquery.magnific-popup.js}"></script>
+
+<!-- Date Picker -->
+<script th:src="@{/search/js/gijgo.min.js}"></script>
+<!-- Nice-select, sticky -->
+<script th:src="@{/search/js/jquery.nice-select.min.js}"></script>
+<script th:src="@{/search/js/jquery.sticky.js}"></script>
+
+<!-- counter , waypoint -->
+<script th:src="@{/search/js/jquery.counterup.min.js}"></script>
+<script th:src="@{/search/js/waypoints.min.js}"></script>
+<script th:src="@{/search/js/jquery.countdown.min.js}"></script>
+<!-- contact js -->
+<script th:src="@{/search/js/contact.js}"></script>
+<script th:src="@{/search/js/jquery.form.js}"></script>
+<script th:src="@{/search/js/jquery.validate.min.js}"></script>
+<script th:src="@{/search/js/mail-script.js}"></script>
+<script th:src="@{/search/js/jquery.ajaxchimp.min.js}"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script th:src="@{/search/js/plugins.js}"></script>
+<script th:src="@{/search/js/main.js}"></script>
+
+</body>
+</html>
